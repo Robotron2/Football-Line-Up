@@ -15,9 +15,6 @@ class Club {
     }
 }
 
-// let myClub = new club("Theo", "Sola", "TomorrowLand")
-// console.log(myClub.clubName)
-
 let teamName = document.getElementById("teamName")
 let centerForward1 = document.getElementById("CF1")
 let centerForward2 = document.getElementById("CF2")
@@ -38,40 +35,33 @@ const okayBtn = document.getElementById("okay")
 const startBtn = document.getElementById("beginBtn")
 
 formationBtn.addEventListener("click", () => {
-    newClub = new Club(teamName.value, centerForward1.value, centerForward2.value, attackingMidfielder.value, leftMidfielder.value, rightMidfielder.value, defendingMidfielder.value, leftBack.value, centerBack1.value, centerBack2.value, rightBack.value, goalKeeper.value)
-        // console.log(newClub.name, newClub.cF1, newClub.cF2, newClub.aM, newClub.lM, newClub.rM, newClub.dM, newClub.lB, newClub.cB1, newClub.cB2, newClub.rB, newClub.gK)
-    inputContainer.classList.add("hide")
-    formationContainer.classList.remove("hide")
+    if (teamName.value == "" || centerForward1.value == "" || centerForward1.value == "" || attackingMidfielder.value == "" || leftMidfielder.value == "" || rightMidfielder.value == "" || defendingMidfielder.value == "" || leftBack.value == "" || centerBack1.value == "" || centerBack2.value == "" || rightBack.value == "" || goalKeeper.value == "") {
+        alert("Fill all empty fields pls")
+    } else {
+        newClub = new Club(teamName, centerForward1.value, centerForward2.value, attackingMidfielder.value, leftMidfielder.value, rightMidfielder.value, defendingMidfielder.value, leftBack.value, centerBack1.value, centerBack2.value, rightBack.value, goalKeeper.value)
+        inputContainer.classList.add("hide")
+        formationContainer.classList.remove("hide")
 
-    //     formationContainer.innerHTML = `
-    //     <center>
-    //     <img src="images/pitch.png" alt="" srcset="" class="pitch">
-    // </center>
-    // <div class="playerDiv">
-    //     <center>
+        formationContainer.innerHTML = `
+        <center>
+            <img src="images/pitch.png" alt="" srcset="" class="pitch">
+        </center>
+        <div class="playerDiv">
+            <center>
+                <div id="cf1"><img class="player" src="images/CF1.png" alt="" srcset="" height="80" width="80"><span>${newClub.cF1}</span></div>
+                <div id="cf2"><img class="player" src="images/CF2.png" alt="" srcset="" height="80" width="80"><span>${newClub.cF2}</span></div>
+                <div id="aM"><img class="player" src="images/AM.png" alt="" srcset="" height="80" width="80"><span>${newClub.aM}</span></div>
+                <div id="lM"><img class="player" src="images/LM.png" alt="" srcset="" height="80" width="80"><span>${newClub.lM}</span></div>
+                <div id="rM"><img class="player" src="images/RM.png" alt="" srcset="" height="80" width="80"><span>${newClub.rM}</span></div>
+                <div id="dM"><img class="player" src="images/DM.png" alt="" srcset="" height="80" width="80"><span>${newClub.dM}</span></div>
+                <div id="lB"><img class="player" src="images/LB.png" alt="" srcset="" height="80" width="80"><span>${newClub.lB}</span></div>
+                <div id="cB1"><img class="player" src="images/CB1.png" alt="" srcset="" height="80" width="80"><span>${newClub.cB1}</span></div>
+                <div id="cB2"><img class="player" src="images/CB2.png" alt="" srcset="" height="80" width="80"><span>${newClub.cB2}</span></div>
+                <div id="rB"><img class="player" src="images/RB.png" alt="" srcset="" height="80" width="80"><span>${newClub.rB}</span></div>
+                <div id="gK"><img class="player" src="images/GK.png" alt="" srcset="" height="80" width="80"><span>${newClub.gK}</span></div>
+            </center>
+        </div>
+        `
+    }
 
-    //         <div id="cf1"><img class="player"  src="images/CF1.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
-    //         <div id="cf2"><img class="player" src="images/CF2.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
-    //         <div id="aM"><img class="player"  src="images/AM.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
-    //         <div id="lM"><img class="player"  src="images/LM.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
-    //         <div id="rM"><img class="player"  src="images/RM.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
-    //         <div id="dM"><img class="player"  src="images/DM.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
-    //         <div id="lB"><img class="player"  src="images/LB.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
-    //         <div id="cB1"><img class="player"  src="images/CB1.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
-    //         <div id="cB2"><img class="player"  src="images/CB2.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
-    //         <div id="rB" ><img class="player" src="images/RB.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
-    //         <div id="gK" ><img class="player" src="images/GK.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
-    //     </center>
-    // </div>
-    //     `
-    // })
-
-    okayBtn.addEventListener("click", () => {
-            inputContainer.classList.remove("hide")
-            formationContainer.classList.add("hide")
-        })
-        // startBtn.addEventListener("click", () => {
-        //     inputContainer.classList.remove("hide")
-        //     aboutDiv.classList.add("hide")
-        // })
 })
