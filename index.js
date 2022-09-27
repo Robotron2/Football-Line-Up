@@ -43,7 +43,7 @@ formationBtn.addEventListener("click", () => {
 
     formationContainer.innerHTML = `
     <center>
-            <img src="pitch.png" alt="" srcset="">
+            <img src="images/pitch.png" alt="" srcset="">
     </center>
     `
 })
