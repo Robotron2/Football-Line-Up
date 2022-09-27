@@ -11,30 +11,52 @@
 
 <body>
 
-    <div class="inputContainer" id="inputContainer">
+    <!-- <center>
         <div class="about" id="about">
             <h3>This is a program that uses Javascript OOP to create a simple model of a club's 4-3-3 formation</h3>
             <button class="btn" id="beginBtn">Get started</button>
         </div>
-        <input type="text" name="" id="teamName" class="inpClass" placeholder="Team Name">
-        <input type="text" name="" id="CF1" class="inpClass" placeholder="Center Forward">
-        <input type="text" name="" id="CF2" class="inpClass" placeholder="Center Forward">
-        <input type="text" name="" id="AM" class="inpClass" placeholder="Attacking Midfielder">
-        <input type="text" name="" id="LM" class="inpClass" placeholder="Left Midfielder">
-        <input type="text" name="" id="RM" class="inpClass" placeholder="Right Midfielder">
-        <input type="text" name="" id="DM" class="inpClass" placeholder="Denfending Midfielder">
-        <input type="text" name="" id="LB" class="inpClass" placeholder="Left Back">
-        <input type="text" name="" id="CB1" class="inpClass" placeholder="Center Back">
-        <input type="text" name="" id="CB2" class="inpClass" placeholder="Center Back">
-        <input type="text" name="" id="RB" class="inpClass" placeholder="Right Back">
-        <input type="text" name="" id="GK" class="inpClass" placeholder="Goal Keeper">
-        <button class="btn" id="getFormation">Get Formation</button>
+    </center> -->
+    <div id="container">
+        <div class="inputContainer" id="inputContainer">
+            <input type="text" name="" id="teamName" class="inpClass" placeholder="Team Name">
+            <input type="text" name="" id="CF1" class="inpClass" placeholder="Center Forward">
+            <input type="text" name="" id="CF2" class="inpClass" placeholder="Center Forward">
+            <input type="text" name="" id="AM" class="inpClass" placeholder="Attacking Midfielder">
+            <input type="text" name="" id="LM" class="inpClass" placeholder="Left Midfielder">
+            <input type="text" name="" id="RM" class="inpClass" placeholder="Right Midfielder">
+            <input type="text" name="" id="DM" class="inpClass" placeholder="Denfending Midfielder">
+            <input type="text" name="" id="LB" class="inpClass" placeholder="Left Back">
+            <input type="text" name="" id="CB1" class="inpClass" placeholder="Center Back">
+            <input type="text" name="" id="CB2" class="inpClass" placeholder="Center Back">
+            <input type="text" name="" id="RB" class="inpClass" placeholder="Right Back">
+            <input type="text" name="" id="GK" class="inpClass" placeholder="Goal Keeper">
+        </div>
+        <center>
+            <button class="btn" id="getFormation">Get Formation</button>
+        </center>
     </div>
+
     <div id="formationContainer" class="hide">
-        <!-- <center>
-            <img src="pitch.png" alt="" srcset="">
-        </center> -->
-        <img src="vest.png" alt="" srcset="" height="80" width="80">
+        <center>
+            <img src="images/pitch.png" alt="" srcset="" class="pitch">
+        </center>
+        <div class="playerDiv">
+            <center>
+
+                <div id="cf1"><img class="player" src="images/CF1.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
+                <div id="cf2"><img class="player" src="images/CF2.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
+                <div id="aM"><img class="player" src="images/AM.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
+                <div id="lM"><img class="player" src="images/LM.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
+                <div id="rM"><img class="player" src="images/RM.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
+                <div id="dM"><img class="player" src="images/DM.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
+                <div id="lB"><img class="player" src="images/LB.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
+                <div id="cB1"><img class="player" src="images/CB1.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
+                <div id="cB2"><img class="player" src="images/CB2.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
+                <div id="rB"><img class="player" src="images/RB.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
+                <div id="gK"><img class="player" src="images/GK.png" alt="" srcset="" height="80" width="80"><span>Name</span></div>
+            </center>
+        </div>
         <button id="okay" class="btn">Okay</button>
     </div>
 

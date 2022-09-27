@@ -5,3 +5,386 @@ body {
 .hide {
     display: none;
 }
+
+.about {
+    margin-top: 200px;
+}
+
+.about h3 {
+    color: #EAF6F6;
+    font-size: 3rem;
+}
+
+.about button {
+    padding: 2vmin 4vmin;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(82, 187, 82, 0.932);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 13px 13px 20px #5555, -13px 13px 20px rgba(120, 167, 120, 0.932);
+}
+
+.inputContainer {
+    background-color: rgba(120, 167, 120, 0.932);
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 3px;
+    box-shadow: 13px 13px 20px #5555, -13px 13px 20px rgba(120, 167, 120, 0.932);
+}
+
+.inputContainer input {
+    background-color: #EAF6F6;
+    padding: 30px;
+    font-size: 1rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+#getFormation {
+    padding: 2vmin 4vmin;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(82, 187, 82, 0.932);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 13px 13px 20px #5555, -13px 13px 20px rgba(120, 167, 120, 0.932);
+}
+
+.pitch {
+    position: relative;
+    z-index: -1;
+}
+
+
+/* .playerDiv {
+    position: relative;
+    z-index: 10;
+} */
+
+.playerDiv div {
+    position: relative;
+    z-index: 10;
+}
+
+.playerDiv div img {
+    display: block;
+}
+
+@keyframes cf1 {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        top: -680px;
+        right: -50px;
+    }
+    50% {
+        top: -680px;
+        right: -100px;
+    }
+    75% {
+        top: -680px;
+        right: -200px;
+    }
+    100% {
+        top: -680px;
+        right: 100px;
+    }
+}
+
+#cf1 {
+    animation: cf1 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cf2 {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        top: -680px;
+        right: -200px;
+    }
+    50% {
+        top: -680px;
+        right: -300px;
+    }
+    75% {
+        top: -680px;
+        right: -400px;
+    }
+    100% {
+        top: -780px;
+        right: -100px;
+    }
+}
+
+#cf2 {
+    animation: cf2 3s forwards;
+}
+
+@keyframes aM {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        top: -580px;
+        right: -100px;
+    }
+    50% {
+        top: -580px;
+        right: -100px;
+    }
+    75% {
+        top: -580px;
+        right: -150px;
+    }
+    100% {
+        top: -780px;
+        right: -10px;
+    }
+}
+
+#aM {
+    animation: aM 3s forwards;
+}
+
+@keyframes lM {
+    0% {
+        top: -380px;
+        left: 0;
+    }
+    25% {
+        top: -480px;
+        right: 10px;
+    }
+    50% {
+        top: -580px;
+        right: 20px;
+    }
+    75% {
+        top: -680px;
+        right: 40px;
+    }
+    100% {
+        top: -780px;
+        right: 220px;
+    }
+}
+
+#lM {
+    right: 50px;
+    top: -480px;
+    animation: lM 3s forwards;
+}
+
+@keyframes rM {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        top: -480px;
+        right: -15px;
+    }
+    50% {
+        top: -480px;
+        right: -200px;
+    }
+    75% {
+        top: -480px;
+        right: -250px;
+    }
+    100% {
+        top: -880px;
+        right: -220px;
+    }
+}
+
+#rM {
+    animation: rM 3s forwards;
+}
+
+@keyframes dM {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        top: -380px;
+    }
+    50% {
+        top: -380px;
+    }
+    75% {
+        top: -380px;
+    }
+    100% {
+        top: -850px;
+        right: -1px;
+    }
+}
+
+#dM {
+    animation: dM 3s forwards;
+}
+
+@keyframes lB {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        top: -260px;
+        right: 80px;
+    }
+    50% {
+        top: -260px;
+        right: 160px;
+    }
+    75% {
+        top: -260px;
+        right: 260px;
+    }
+    100% {
+        top: -260px;
+        right: 320px;
+    }
+}
+
+#lB {
+    animation: lB 3s forwards;
+}
+
+@keyframes cB1 {
+    0% {
+        top: 0;
+        right: 50px;
+    }
+    25% {
+        top: -260px;
+        right: 100px;
+    }
+    50% {
+        top: -260px;
+        right: 150px;
+    }
+    75% {
+        top: -260px;
+        right: 200px;
+    }
+    100% {
+        top: -260px;
+        right: 250px;
+    }
+}
+
+#cB1 {
+    animation: cB1 3s forwards;
+}
+
+@keyframes cB2 {
+    0% {
+        top: 0;
+        right: 0px;
+    }
+    25% {
+        top: -260px;
+        right: 50px;
+    }
+    50% {
+        top: -260px;
+        right: 70px;
+    }
+    75% {
+        top: -260px;
+        right: 120px;
+    }
+    100% {
+        top: -260px;
+        right: 170px;
+    }
+}
+
+#cB2 {
+    animation: cB2 3s forwards;
+}
+
+@keyframes rB {
+    0% {
+        top: 0;
+        right: 0px;
+    }
+    25% {
+        top: -260px;
+        right: 25px;
+    }
+    50% {
+        top: -260px;
+        right: 50px;
+    }
+    75% {
+        top: -260px;
+        right: 75px;
+    }
+    100% {
+        top: -260px;
+        right: 100px;
+    }
+}
+
+#rB {
+    animation: rB 3s forwards;
+}
+
+@keyframes gK {
+    0% {
+        top: 0;
+        right: 70px;
+    }
+    25% {
+        top: -140px;
+        right: 170px;
+    }
+    50% {
+        top: -140px;
+        right: 270px;
+    }
+    75% {
+        top: -140px;
+        right: 370px;
+    }
+    100% {
+        top: -140px;
+        right: 430px;
+    }
+}
+
+#gK {
+    animation: gK 3s forwards;
+}
+
+#okay {
+    position: relative;
+    left: 700px;
+    top: -30px;
+    padding: 2vmin 4vmin;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(82, 187, 82, 0.932);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 13px 13px 20px #5555, -13px 13px 20px rgba(120, 167, 120, 0.932);
+}
