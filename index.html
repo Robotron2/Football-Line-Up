@@ -10,11 +10,12 @@
 </head>
 
 <body>
-    <div class="about" id="about">
-        <h3>This is a program that uses Javascript OOP to create a simple model of a club's 4-3-3 formation</h3>
-        <button class="btn" id="beginBtn">Get started</button>
-    </div>
+
     <div class="inputContainer" id="inputContainer">
+        <div class="about" id="about">
+            <h3>This is a program that uses Javascript OOP to create a simple model of a club's 4-3-3 formation</h3>
+            <button class="btn" id="beginBtn">Get started</button>
+        </div>
         <input type="text" name="" id="teamName" class="inpClass" placeholder="Team Name">
         <input type="text" name="" id="CF1" class="inpClass" placeholder="Center Forward">
         <input type="text" name="" id="CF2" class="inpClass" placeholder="Center Forward">
@@ -29,11 +30,12 @@
         <input type="text" name="" id="GK" class="inpClass" placeholder="Goal Keeper">
         <button class="btn" id="getFormation">Get Formation</button>
     </div>
-    <div id="formationContainer hide">
-        <center>
+    <div id="formationContainer" class="hide">
+        <!-- <center>
             <img src="pitch.png" alt="" srcset="">
-        </center>
+        </center> -->
         <img src="vest.png" alt="" srcset="" height="80" width="80">
+        <button id="okay" class="btn">Okay</button>
     </div>
 
 

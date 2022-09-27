@@ -33,8 +33,22 @@ let goalKeeper = document.getElementById("GK")
 const inputContainer = document.getElementById("inputContainer")
 const formationContainer = document.getElementById("formationContainer")
 const formationBtn = document.getElementById("getFormation")
+const okayBtn = document.getElementById("okay")
 
 formationBtn.addEventListener("click", () => {
     newClub = new Club(teamName.value, centerForward1.value, centerForward2.value, attackingMidfielder.value, leftMidfielder.value, rightMidfielder.value, defendingMidfielder.value, leftBack.value, centerBack1.value, centerBack2.value, rightBack.value, goalKeeper.value)
         // console.log(newClub.name, newClub.cF1, newClub.cF2, newClub.aM, newClub.lM, newClub.rM, newClub.dM, newClub.lB, newClub.cB1, newClub.cB2, newClub.rB, newClub.gK)
+    inputContainer.classList.add("hide")
+    formationContainer.classList.remove("hide")
+
+    formationContainer.innerHTML = `
+    <center>
+            <img src="pitch.png" alt="" srcset="">
+    </center>
+    `
+})
+
+okayBtn.addEventListener("click", () => {
+    inputContainer.classList.remove("hide")
+    formationContainer.classList.add("hide")
 })
